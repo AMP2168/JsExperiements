@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<Head>
+</Head>
+<body>
+
+    <h2>JavaScript Experiments</h2>
+
+    <h4>Demo1. Change HTML text, code in HTML</h4>
+    <p id = "demo1">What can I do?</p>
+    <Button type="button"
+    onclick='document.getElementById("demo1").innerHTML = "I have changed"'>Click to change</Button>
+
+    <h4>Demo2. Make text appear, code in HTML</h4>
+    
+    <p id="demo2"></p>
+    <button type="button" 
+    onclick='document.getElementById("demo2").innerHTML = "make text appear"'>Click Me!</button>
+
+    <br>
+    <br>
+
+    <h4>Demo3. Add text when no HTML, code in HTML </h4>
+    <p id ="demo3"></p>
+
+    <script>document.getElementById("demo3").innerHTML = "Here is demo 3";</script>
+    <br>
+
+    <h4>Demo4. Easy maths function (6 + 6), code in HTML </h4>
+    <script>
+    document.write(6 + 6);
+    </script>
+    <br>
+    <br>
+    <h4>Demo5. change pics on click, code in HTML </h4>
+
+    <button
+    onclick="document.getElementById('Lou').src='Images/Lou-Wall-Illuminati-supplied-by-MICF-1170x660.jpeg'">
+    Here's Lou</button>
+
+    <img id="Lou" src="Images/Lou-Wall-Illuminati-supplied-by-MICF-1170x660.jpeg" style="width:200px">
+
+    <button
+    onclick="document.getElementById('Lou').src='Images/Telia-Nevile-LITTLE-MONSTERS-supplied.jpeg'">Here's Telia</button>
+
+    <br>
+    <br>
+
+    <p id="demo6">Demo6. Change the style of an HTML element. Ccde in HTML</p>
+
+    <button type="button"
+    onclick="document.getElementById('demo6').style.fontSize='30px'">Change size</button>
+
+    <p id="demo7">Demo 7. JS can hide stuff</p>
+
+    <button type="button"
+    onclick="document.getElementById('demo7').style.display='none'">Go away</button>
+    <br>
+
+    <p>QUESTION: How do I keep the space after it disappears?</p>
+    <br>
+    <h4>Demo 8. Make everything disappear. Refresh to bring it all back.</h4>
+    <button type="button" onclick="document.write('Where did it go?')">Everything disappears</button>
+    
+    
+    <h4>Demo9. Is the alert box when I refresh the page</h4>
+    <script>
+        alert("This is an alert");
+        </script>
+
+    <h4> Demo10 x y z statements in script tags </h4> 
+    <p id="demo10"></p> 
+
+    <script>
+    let x, y, z;  // Statement 1
+    x = 20;        // Statement 2
+    y = 6;        // Statement 3
+    z = x + y;    // Statement 4
+    
+    document.getElementById("demo10").innerHTML =
+    "z is " + z + "";  
+    </script>
+
+
+    <h4>Demo11. Show hidden elements with display</h4>
+
+    <p id="demo11" style="display:none">How you doin'?</p>
+    <button type="button" 
+    onclick="document.getElementById('demo11').style.display='block'">Click Me!</button>
+    <br>
+
+    <h4>Demo12 Using script tags</h4>
+    <p id="demo12"></p>
+
+    <script>
+    document.getElementById("demo12").innerHTML = "This code is in script tags";
+    </script>
+
+    <h4>Demo13. Functions. Code still in HTML</h4>
+    <p id="demo13">Demo13</p>
+    <button type="button" 
+    onclick="myFunctionA()">Click this fucker</button>
+    
+    <br>
+    
+    <h4>Demo14. Using an external file for JS</h4>
+    <p id="demo14"></p>
+   
+
+    <p><i>ask about where you place the file src cos in different places it doesn't work.</i></p>
+
+    <h4>Demo 15 An example of statements putting the code in the JS file. </h4> 
+    <p id="demo15"></p>
+    <p>
+    <h4>Demo 16 and 17. Functions in JS file.</h4> 
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+
+    <button type="button" onclick="myFunctionB()">Function Click</button>
+      
+    <h4>More variables. Demo 18</h4>
+    <p>The variable is f , which is 88.</p>
+    <p id="demo18"></p>
+
+
+
+    <script src="script.js"></script>
+  
+
+
+    <br>
+    <br>
+</body>
+</html
+
+
+
+
+
+
+
+
+
+
+
+ const barkCount = 3;
+    const backtick = `Byron barks ${barkCount} times`; //=> "Byron barks 3 times"
+    const singleQuote = 'Byron barks' + barkCount + 'times'; //=> "Byron barks ${barkCount} times
+    const doubleQuote = "Byron barks" + barkCount + "times"; //=> "Byron barks ${barkCount} times
+
+
+    let name = "AM";
+    const greetings = "How you doing?" + name;
+
+    const greetingsOne = "<p class=\"FontClass\"> Hello, \"hyd\"</p>
+
+const firstName = "Byronius";
+const clanName = "Karbitus";
+const commonName = "Maris";
+let fullName;
+
+// With +
+fullName = firstName + " " + clanName + " " + commonName; //=> "Byronius Karbitus Maris"
+
+// Or, with interpolation
+fullName = `${firstName} ${clanName} ${commonName}`; //=> "Byronius Karbitus Maris"
+
+// Keep in mind it returns a _new_ String; therefore:
+firstName;  //=> "Byronius"
+clanName;   //=> "Karbitus"
+console.log(commonName); //=> "Maris"
+alert(fullName);   //=> "Byronius Karbitus Maris"
+
+
+
+
+
+
+
+</body>
+</html>
